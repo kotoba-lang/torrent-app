@@ -1,5 +1,5 @@
 (ns kotoba.torrent-app.download
-  (:require [clojure.data.json :as json]
+  (:require [json.data-json :as json]
             [clojure.java.io :as io])
   (:import (java.io ByteArrayOutputStream DataInputStream DataOutputStream RandomAccessFile)
            (java.net HttpURLConnection Socket URL URLEncoder)
