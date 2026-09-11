@@ -62,7 +62,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     let p = Process(); let pipe = Pipe()
     p.currentDirectoryURL = URL(fileURLWithPath: ProcessInfo.processInfo.environment["KOTOBA_TORRENT_APP_DIR"] ?? FileManager.default.currentDirectoryPath)
     p.executableURL = URL(fileURLWithPath: "/usr/bin/env")
-    p.arguments = ["clojure", "-M", "-m", "kotoba.torrent-app.download", torrent.path, output.path]
+    p.arguments = ["kbb", "-M", "-m", "kotoba.torrent-app.download", torrent.path, output.path]
     p.standardOutput = pipe; p.standardError = pipe
     pipe.fileHandleForReading.readabilityHandler = { [weak self] handle in
       let data = handle.availableData
