@@ -2,7 +2,7 @@
   (:require [json.data-json :as json]
             [clojure.java.io :as io])
   (:import (java.io ByteArrayOutputStream DataInputStream DataOutputStream RandomAccessFile)
-           (java.net HttpURLConnection Socket URL URLEncoder)
+           (java.net HttpURLConnection Socket URL)
            (java.nio.file Files StandardCopyOption)
            (java.security MessageDigest)
            (java.util Arrays)))
