@@ -1,5 +1,5 @@
 (ns kotoba.torrent-app-test
-  (:require [clojure.test :refer [deftest is run-tests]]
+  (:require [kotoba.test :refer [deftest is run-tests]]
             [kotoba.torrent-app :as app]
             [kotoba.torrent-app.download :as download]))
 
